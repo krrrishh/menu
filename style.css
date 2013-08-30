@@ -1,0 +1,208 @@
+body {background-color: #ccc;}
+#container {
+	margin: 0 auto;
+	font-family: 'Andada', serif;
+}
+
+/*
+////////
+////////
+////////
+//VERT//
+////////
+////////
+////////
+////////
+*/
+
+.vert-nav li {
+	list-style-type: none;
+	border: 2px solid #27ce91;
+	border-top: none;
+	width: 200px;
+	background-color: #000;
+	-webkit-transition: opacity 400ms linear;
+     -moz-transition: opacity 400ms linear;
+     -o-transition: opacity 400ms linear;
+     -ms-transition: opacity 400ms linear;
+     transition: opacity 400ms linear;
+      -webkit-transition: background-color 500ms linear;
+     -moz-transition: background-color 500ms linear;
+     -o-transition: background-color 500ms linear;
+     -ms-transition: background-color 500ms linear;
+     transition: background-color 500ms linear;
+}
+
+.vert-nav li:hover {
+	background-color: #27ce91;
+     -webkit-transition: background-color 500ms linear;
+     -moz-transition: background-color 500ms linear;
+     -o-transition: background-color 500ms linear;
+     -ms-transition: background-color 500ms linear;
+     transition: background-color 500ms linear;
+
+     width: 220px;
+     -webkit-transition: width 200ms linear;
+     -moz-transition: width 200ms linear;
+     -o-transition: width 200ms linear;
+     -ms-transition: width 200ms linear;
+     transition: width 200ms linear;
+}
+
+.vert-nav li:hover a {
+	color: #000;
+	-webkit-transition: color 500ms linear;
+     -moz-transition: color 500ms linear;
+     -o-transition: color 500ms linear;
+     -ms-transition: color 500ms linear;
+     transition: color 500ms linear;
+}
+
+#container .first {
+	border-top: 2px solid #27ce91;
+}
+#container .last {
+}
+
+.vert-nav li a {
+	-webkit-transition: color 500ms linear;
+     -moz-transition: color 500ms linear;
+     -o-transition: color 500ms linear;
+     -ms-transition: color 500ms linear;
+     transition: color 500ms linear;
+	text-decoration: none;
+	text-align: center;
+	color: #27ce91;
+	font-size: 32px;
+	display: block;
+	height: 50px;
+	outline: none;
+}
+
+.vert-nav li:hover {
+	outline: 3px solid #fff;
+	box-shadow: 0 0 34px #000;
+}
+
+.vert-nav .active {
+	/*outline: 3px solid #fff;
+	box-shadow: 0 0 34px #000;*/
+}
+
+.vert-nav .active:active {
+	box-shadow: none;
+	outline: none;
+}
+
+.vert-nav .idle {
+	-webkit-transition: opacity 400ms linear;
+     -moz-transition: opacity 400ms linear;
+     -o-transition: opacity 400ms linear;
+     -ms-transition: opacity 400ms linear;
+     transition: opacity 400ms linear;
+	opacity: .8;
+
+    color: transparent;
+    text-shadow: 0px 0px 5px #27ce91;
+    -webkit-transform: skew(0deg);
+    -moz-transform: skew(0deg);
+    -o-transform: skew(0deg);
+    -ms-transform: skew(0deg);
+    transform: skew(0deg);
+}
+
+
+.bubble {
+	display: none;
+	position: absolute;
+	margin-left: 251px;
+	margin-top: -86px;
+	width: 250px;
+	height: 120px;
+	padding: 0px;
+	background: #27ce91;
+	border: #fff solid 4px;
+	-webkit-border-radius: 0px;
+	-moz-border-radius: 0px;
+	border-radius: 0px;
+}
+
+.bubble:after {
+	content: "";
+	position: absolute;
+	top: 31px;
+	left: -26px;
+	border-style: solid;
+	border-width: 29px 26px 29px 0;
+	border-color: transparent #fff;
+	display: block;
+	width: 0;
+	z-index: 1;
+}
+
+.bubble:before {
+	content: "";
+	position: absolute;
+	top: 28px;
+	left: -33px;
+	border-style: solid;
+	border-width: 32px 29px 32px 0;
+	border-color: transparent #fff;
+	display: block;
+	width: 0;
+	z-index: 0;
+}
+
+.bubble p {
+	font-weight: bold;
+	text-align: center;
+	padding-top: 10px;
+	color: #000;
+}
+
+/*
+//////////////////HORIZON/////////////////////
+*/
+
+.horizon-nav li {
+	list-style-type: none;
+	display: inline;
+}
+.horizon-nav li a {
+	background-color: #27ce91;
+	color: #000;
+	padding: 5px 40px;
+	border: 5px solid #000;
+	text-decoration: none;
+	font-size: 30px;
+     -webkit-transition: background-color 500ms linear;
+     -moz-transition: background-color 500ms linear;
+     -o-transition: background-color 500ms linear;
+     -ms-transition: background-color 500ms linear;
+     transition: background-color 500ms linear;
+
+     -webkit-transition: color 300ms linear;
+     -moz-transition: color 300ms linear;
+     -o-transition: color 300ms linear;
+     -ms-transition: color 300ms linear;
+     transition: color 300ms linear;
+      -webkit-transition: border 300ms linear;
+     -moz-transition: border 300ms linear;
+     -o-transition: border 300ms linear;
+     -ms-transition: border 300ms linear;
+     transition: border 300ms linear;
+}
+
+.horizon-nav li a.active {
+	background-color: #000;
+	color: #27ce91;
+	border-color: #27ce91;
+	box-shadow: 0 0 10px #000;
+}
+
+.horizon-nav li a.idle {
+	border-color: transparent;
+
+}
+
+
