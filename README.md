@@ -1,4 +1,4 @@
 menu
 ====
 
-cool, plain and simple jquery menu
+simple menu
