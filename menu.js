@@ -27,17 +27,26 @@ for (var i = vertNavLis.length - 1; i >= 0; i--) {
 	});
 
 	li.addEventListener('mouseout', function (mouseEvent) {
+		if (mouseEvent.target.parentNode.id === 'droplet') {
+			return;
+		}
 		$(mouseEvent.target).removeClass('active');
 		$(mouseEvent.target.parentNode).siblings().children().removeClass('idle');
 	});
 };
+
+droplet.addEventListener('mouseout', function (mouseEvent) {
+	var anchor = $('#droplet a');
+	$(anchor).removeClass('active');
+	$(droplet).siblings().children().removeClass('idle');
+});
+
+
 ///////////////////////////////
 //////////  horizon  //////////
 ///////////////////////////////
 var horizon = document.querySelector('.horizon-nav'),
 	horizonItems = horizon.querySelectorAll('a');
-
-	console.log('horizonItems:', horizonItems);
 
 for (var i = horizonItems.length - 1; i >= 0; i--) {
 	var item = horizonItems[i];
